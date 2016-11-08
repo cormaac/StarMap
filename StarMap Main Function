@@ -14,18 +14,25 @@ void setup()
 void draw()
 {
   b.Table();
-  int x=0;
-  int y=0;
+  float x=0;
+  float y=0;
   
-  for(x=0; x<width; x=x+800/8)
+  for(x=0; x<width; x=x+75)
   {
-    line(x,0,x,height);
+    line(x,height,x,50);
     stroke(228,21,235);
   }
   
-  for(y=0; y<height; y=y+800/8)
+  for(y=0; y<height; y=y+75)
   {
-    line(0,y,width,y);
+    line(50,y,width,y);
     stroke(228,21,235);
+    
   }
+  line (50,50,width, 50);
+  line (50,50,50, height);
+  
+  
+
+  
 }
