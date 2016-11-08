@@ -1,0 +1,25 @@
+# StarMap
+StarMap for Lab test 1 OOP
+class Star
+{
+
+
+void Table()
+{
+  Table stars;
+  
+  stars = loadTable("starmap.csv", "header");
+  
+   for (TableRow row : stars.rows()) {
+    
+    int hab = row.getInt("Hab?");
+    String DisplayName = row.getString("Display Name");
+    int Distance = row.getInt("Distance");
+    int AbsMag = row.getInt("AbsMag");  
+    
+    println(hab+DisplayName+Distance+AbsMag);
+
+  
+}
+  }
+}
