@@ -1,0 +1,16 @@
+//Cormac Montague C12701485
+
+Star b;
+
+void setup()
+{
+  size(800,800);
+  b = new Star();
+}
+
+
+
+void draw()
+{
+  b.Table();
+}
